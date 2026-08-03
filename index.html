@@ -1,103 +1,259 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваше Имя — Разработка сайтов</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web-разработчик — Создание сайтов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Ваше Имя</h1>
-            <p class="tagline">Создаю сайты и цифровые решения для локального бизнеса</p>
-            <nav>
-                <a href="#services">Услуги</a>
-                <a href="#portfolio">Портфолио</a>
-                <a href="#about">Обо мне</a>
-                <a href="#contact">Контакты</a>
-            </nav>
-        </div>
-    </header>
 
-    <section id="services">
-        <div class="container">
-            <h2>Услуги</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Сайт-визитка</h3>
-                    <p>От 1 до 5 страниц. Адаптивный дизайн. Чистый код без конструкторов.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Telegram-бот</h3>
-                    <p>Автоматизация записи, заказов, уведомлений для вашего бизнеса.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Настройка карт и отзывов</h3>
-                    <p>Помогаю клиентам находить вас на картах и доверять отзывам.</p>
-                </div>
+<header id="header">
+  <div class="container header-inner">
+    <div class="logo">D<span>.</span></div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#process">Этапы</a></li>
+        <li><a href="#testimonials">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn-primary">Обсудить проект</a>
+    <div class="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="hero-tag">Создание сайтов под ключ</span>
+        <h1>Создаю сайты, которые помогают бизнесу зарабатывать больше.</h1>
+        <p class="hero-sub">Современные сайты с высокой скоростью, стильным дизайном и продуманной структурой.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Обсудить проект</a>
+          <a href="#portfolio" class="btn-secondary">Смотреть работы</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mockup">
+          <div class="mockup-screen">
+            <div class="mockup-header">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Примеры работ</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Кофейня" alt="Сайт кофейни">
-                    <div class="portfolio-info">
-                        <h3>Кофейня</h3>
-                        <p>Адаптивный сайт с меню, акциями и формой заказа.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Парикмахерская" alt="Сайт парикмахерской">
-                    <div class="portfolio-info">
-                        <h3>Парикмахерская</h3>
-                        <p>Сайт с услугами, ценами и онлайн-записью.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Пекарня" alt="Сайт пекарни">
-                    <div class="portfolio-info">
-                        <h3>Пекарня</h3>
-                        <p>Каталог товаров, доставка, отзывы клиентов.</p>
-                    </div>
-                </div>
+            <div class="mockup-content">
+              <div class="mockup-line"></div>
+              <div class="mockup-line"></div>
+              <div class="mockup-line short"></div>
+              <div class="mockup-grid">
+                <span></span><span></span><span></span>
+              </div>
             </div>
+          </div>
+          <div class="glow"></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <div class="about-content">
-                <p>Меня зовут Ваше Имя. Я создаю сайты и цифровые решения для локального бизнеса. Мой подход — простота, скорость и результат. Работаю без конструкторов, только чистый код.</p>
-                <p><strong>Навыки:</strong> HTML, CSS, JavaScript, Telegram-боты, настройка карт и отзывов.</p>
-            </div>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-photo">
+        <div class="photo-placeholder">
+          <span>📸</span>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Связаться со мной</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="email" name="email" placeholder="Ваш email" required>
-                <textarea name="message" placeholder="Кратко опишите задачу" rows="4" required></textarea>
-                <button type="submit">Отправить</button>
-            </form>
-            <p>Или напишите в Telegram: <strong>@your_telegram</strong></p>
+      </div>
+      <div class="about-text">
+        <h2>Разрабатываю сайты, которые решают задачи бизнеса</h2>
+        <p>Я — веб-разработчик с опытом создания сайтов для локального бизнеса. Помогаю компаниям привлекать клиентов через современный дизайн, высокую скорость и продуманную структуру. Работаю с нуля, без конструкторов, на чистом HTML/CSS/JS.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">года опыта</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">70+</span>
+            <span class="stat-label">проектов</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">довольных клиентов</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ваше Имя. Все права защищены.</p>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">🚀</span>
+          <h3>Лендинг</h3>
+          <p>Одностраничный сайт для быстрого запуска рекламных кампаний и сбора заявок.</p>
+          <span class="service-arrow">→</span>
         </div>
-    </footer>
+        <div class="service-card">
+          <span class="service-icon">🏢</span>
+          <h3>Корпоративный сайт</h3>
+          <p>Полноценный сайт компании с каталогом услуг, блогом и контактной информацией.</p>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🛒</span>
+          <h3>Интернет-магазин</h3>
+          <p>Онлайн-витрина с корзиной, оплатой и интеграцией с доставкой.</p>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">⚡</span>
+          <h3>Поддержка и развитие</h3>
+          <p>Доработка, обновление контента, улучшение скорости и SEO.</p>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>Портфолио</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image"><span>🖥️</span></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-title">Кофейня «Точка»</span>
+            <span class="portfolio-tag">Лендинг</span>
+            <a href="#" class="btn-outline">Смотреть проект</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image"><span>🖥️</span></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-title">Стоматология «Доктор»</span>
+            <span class="portfolio-tag">Корпоративный</span>
+            <a href="#" class="btn-outline">Смотреть проект</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image"><span>🖥️</span></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-title">Пекарня «Хлеб»</span>
+            <span class="portfolio-tag">Интернет-магазин</span>
+            <a href="#" class="btn-outline">Смотреть проект</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <h2>Этапы работы</h2>
+      <div class="process-steps">
+        <div class="step">
+          <span class="step-number">01</span>
+          <span class="step-label">Анализ</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">02</span>
+          <span class="step-label">Прототип</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">03</span>
+          <span class="step-label">Дизайн</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">04</span>
+          <span class="step-label">Разработка</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">05</span>
+          <span class="step-label">Запуск</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Отзывы</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>“Сайт сделали быстро, качественно и с полным пониманием нашей задачи. Результат превзошёл ожидания.”</p>
+          <div class="testimonial-author">
+            <span class="author-name">Алексей Иванов</span>
+            <span class="author-role">Владелец кофейни</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>“После запуска сайта количество заявок выросло в 3 раза. Отличная работа!”</p>
+          <div class="testimonial-author">
+            <span class="author-name">Мария Смирнова</span>
+            <span class="author-role">Директор стоматологии</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>“Профессиональный подход, внимательное отношение к деталям. Рекомендую.”</p>
+          <div class="testimonial-author">
+            <span class="author-name">Дмитрий Козлов</span>
+            <span class="author-role">Владелец пекарни</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="container cta-inner">
+      <h2>Готовы обсудить ваш проект?</h2>
+      <p>Оставьте заявку, и я свяжусь с вами в течение 24 часов.</p>
+      <a href="#" class="btn-primary btn-large">Связаться</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <div class="logo">D<span>.</span></div>
+      <p>Разработка сайтов для локального бизнеса</p>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+      <a href="#">Telegram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">GitHub</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-copy">© 2026 Все права защищены</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
